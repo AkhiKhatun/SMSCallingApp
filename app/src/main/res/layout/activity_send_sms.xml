@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/mainLayout"
+    android:weightSum="1"
+    android:background="#81787c">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:text="Compose New Message"
+        android:textColor="#2bbfb5"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textViewPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="76dp"
+        android:text="Phone Number"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/editTextPhoneNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="110dp"
+        android:inputType="phone"
+        android:textSize="15sp"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/textViewSMSMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editTextPhoneNo"
+        android:text="SMS Message"
+        android:layout_marginStart="5dp"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/editTextSMS"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_above="@+id/btnSendSMS"
+        android:textSize="15sp"
+        android:layout_alignParentStart="true"
+        android:inputType="textMultiLine"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:id="@+id/btnSendSMS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="220dp"
+        android:layout_marginEnd="133dp"
+        android:text="Send"
+        android:background="#68188f"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="133dp" />
+
+    <Button
+        android:id="@+id/btnInbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btnSendSMS"
+        android:layout_marginBottom="152dp"
+        android:onClick="goToInbox"
+        android:text="Inbox"
+        android:background="#2b41bf"/>
+</RelativeLayout>
