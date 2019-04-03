@@ -24,6 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
         android:layout_marginTop="76dp"
         android:text="Phone Number"
         android:textSize="18sp"/>
@@ -47,7 +48,9 @@
         android:layout_below="@+id/editTextPhoneNo"
         android:text="SMS Message"
         android:layout_marginStart="5dp"
-        android:textSize="18sp"/>
+        android:textSize="18sp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp" />
 
     <EditText
         android:id="@+id/editTextSMS"
@@ -64,14 +67,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
         android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="220dp"
-        android:layout_marginEnd="133dp"
-        android:text="Send"
+        android:layout_marginBottom="218dp"
         android:background="#68188f"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="133dp" />
+        android:text="Send" />
 
     <Button
         android:id="@+id/btnInbox"
@@ -82,5 +82,6 @@
         android:layout_marginBottom="152dp"
         android:onClick="goToInbox"
         android:text="Inbox"
-        android:background="#2b41bf"/>
+        android:background="#2b41bf"
+        android:layout_alignLeft="@+id/btnSendSMS" />
 </RelativeLayout>

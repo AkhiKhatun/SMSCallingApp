@@ -8,8 +8,20 @@
     android:paddingRight="16dp"
     android:paddingTop="16dp"
     android:paddingBottom="16dp"
-    android:background="#ffff8d7a"
+    android:background="#f9f4f3"
     tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="153dp"
+        android:text="Emergency Call"
+        android:background="#dc56c0"
+        android:textSize="20dp"
+        android:textStyle="bold" />
 
     <EditText
         android:layout_width="match_parent"
@@ -26,19 +38,20 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="76dp"
-        android:background="#885a49ca"
+        android:background="#52170dd6"
         android:text="Call"
         android:textSize="20sp" />
 
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="157dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="195dp"
-        android:background="#7a83ff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="190dp"
+        android:layout_marginEnd="88dp"
+        android:background="#2649fb"
         android:text="SMS APP"
         android:textSize="34dp" />
 
@@ -48,19 +61,25 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="137dp"
-        android:layout_marginStart="10dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginStart="26dp"
         android:onClick="goToInbox"
-        android:text="Inbox" />
+        android:text="Inbox"
+        android:background="#a7b69f"
+        android:layout_marginLeft="26dp"
+        android:layout_alignParentLeft="true" />
 
     <Button
         android:id="@+id/btnCompose"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/call"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="137dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginEnd="26dp"
         android:onClick="goToCompose"
-        android:text="Compose" />
+        android:text="Compose"
+        android:background="#b719bca0"
+        android:layout_marginRight="26dp"
+        android:layout_alignRight="@+id/call" />
 </RelativeLayout>
